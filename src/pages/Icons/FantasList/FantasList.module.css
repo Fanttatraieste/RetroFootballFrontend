@@ -1,0 +1,11 @@
+.iconContainer {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  align-items: center;
+  position: relative;
+  bottom: 100px;
+}

@@ -1,0 +1,107 @@
+.title {
+  color: #272829;
+  font-family: Life Savers;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: fit-content;
+  margin-bottom: 230px;
+
+  padding: 30px;
+  border-top: 1px solid;
+  border-image: linear-gradient(
+    90deg,
+    #fff 0%,
+    #fff 15%,
+    #878787 50%,
+    #fff 85%,
+    #fff 100%
+  );
+  border-image-slice: 1;
+}
+
+.gridContainer {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pointList {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.pointItem {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.pointContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  background-color: #f5f5f5;
+  width: 260px;
+}
+
+.pointTitle {
+  color: #272829;
+  font-family: Life Savers;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.text {
+  max-width: 105px;
+  text-align: center;
+
+  color: #272829;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.longerText {
+  max-width: 200px;
+}
+
+.first {
+  position: relative;
+  top: 130px;
+}
+
+.second {
+  position: relative;
+  top: 50px;
+}
+
+.third {
+  position: relative;
+  bottom: 150px;
+}
+
+.fifth {
+  position: relative;
+  bottom: 50px;
+}

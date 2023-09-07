@@ -1,0 +1,75 @@
+.searchContainer {
+  background-color: #f5f5f5;
+  padding: 10px 30px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.searchList {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+}
+
+.searchListItem {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+}
+
+.searchListItem p {
+  margin-bottom: -20px;
+
+  color: #040d12;
+  font-family: Life Savers;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.searchInput {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 200px;
+
+  color: #272829;
+  font-family: Life Savers;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button {
+  color: #272829;
+  font-family: Life Savers;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  padding: 10px 20px;
+  border-radius: 15px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.buttonIcon {
+  fill: none;
+  width: 20px;
+  height: 20px;
+}
+
+.buttonIcon g path {
+  fill: #272829;
+}

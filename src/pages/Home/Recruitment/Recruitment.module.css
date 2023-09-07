@@ -1,0 +1,68 @@
+.recruitmentSection {
+  background-color: #f5f5f5;
+  margin: 0px;
+  padding: 50px 30px;
+  /* border: 1px solid red; */
+  overflow: hidden;
+}
+
+.recruitmentSectionInner {
+  max-width: 1500px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+.title {
+  color: #272829;
+  font-family: "Life Savers";
+  font-size: 32px;
+  font-weight: normal;
+  margin: 0px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  position: relative;
+  gap: 40px;
+  /* border: 1px solid red; */
+}
+
+.item {
+  text-align: center;
+  font-family: "Life Savers";
+  font-size: 16px;
+  font-weight: normal;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.item:nth-child(odd) {
+  position: relative;
+  flex-direction: column-reverse;
+  top: 50px;
+}
+
+.item:nth-child(even) {
+  position: relative;
+  flex-direction: column;
+  bottom: 50px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #272829;
+  border-radius: 50%;
+}
+
+.line {
+  /* border: 1px solid black; */
+  position: absolute;
+  left: 120px;
+  top: 45px;
+}

@@ -1,0 +1,201 @@
+.navigation {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: rgba(245, 245, 245, 0.6);
+  text-transform: uppercase;
+  font-family: "Life Savers";
+}
+
+.navLink:hover {
+  color: #f5f5f5;
+}
+
+.navigation a:global(.active) {
+  color: #f5f5f5;
+}
+
+.circle {
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+}
+
+.footer {
+  background-color: #272829;
+  padding: 50px 30px 0px 30px;
+}
+
+.footerInner {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+  height: 69px;
+  /* border: 1px solid red; */
+  /* margin-top: auto; */
+}
+
+.socialIcon {
+  width: 15px;
+  height: 15px;
+  fill: none;
+}
+
+.socialIcon path {
+  fill: #f5f5f5;
+}
+
+.socialIconList {
+  list-style-type: none;
+  display: flex;
+  gap: 18px;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: auto;
+}
+
+.socialLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.socialLink:hover {
+  background-color: #f5f5f5;
+  transition: all 500ms;
+}
+
+.socialLink:hover .socialIcon path {
+  fill: #272829;
+  transition: all 500ms;
+}
+
+.socialContainer {
+  /* border: 1px solid red; */
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+.findMeContainer {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin: 0 0 15px 0;
+  padding: 0 0 0 6px;
+}
+
+.findMeText {
+  font-family: "Montserrat";
+  font-size: 20px;
+  color: #f5f5f5;
+}
+
+.iconIcon {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  margin-right: 5px;
+}
+
+.iconIcon path {
+  fill: #f5f5f5;
+}
+
+.iconStat {
+  font-family: "Montserrat";
+  font-size: 12px;
+  color: #f5f5f5;
+}
+
+.iconCard {
+  border: 1px solid #17706e;
+  border-radius: 5px;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.iconNameContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.iconName {
+  font-family: "Life Savers";
+  color: #f5f5f5;
+  font-weight: lighter;
+}
+
+.iconStatsContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.iconList {
+  display: flex;
+  gap: 30px;
+  padding: 0;
+}
+
+.quote {
+  color: #f5f5f5;
+  text-align: center;
+  max-width: 600px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* border: 1px solid red; */
+  width: 700px;
+  align-items: center;
+}
+
+.credits {
+  width: 100%;
+  margin-top: 50px;
+  border-top: 1px solid rgba(245, 245, 245, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.creditsText {
+  color: rgba(245, 245, 245, 0.2);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.iconImage {
+  width: 51px;
+  height: 51px;
+  border-radius: 30px;
+  object-fit: cover;
+}

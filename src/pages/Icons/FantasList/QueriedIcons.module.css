@@ -1,0 +1,125 @@
+.iconList {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  list-style-type: none;
+}
+
+.iconCard {
+  /* border: 1px solid red; */
+  width: 270px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #17706e;
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+
+.iconName {
+  color: #fff;
+  font-family: Life Savers;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.iconImage {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  align-self: center;
+  border-radius: 8px;
+}
+
+.iconPositionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.iconPosition {
+  color: #f7f7ee;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.iconFantascore {
+  background-color: #272829;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #f7f7ee;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.iconTeamsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0px;
+}
+
+.textLight {
+  padding: 0px;
+  margin: 0px 0px 10px 0px;
+  /* border: 1px solid red; */
+
+  color: #f7f7ee;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.textStrong {
+  padding: 0px;
+  margin: 0px 0px 25px 0px;
+  /* border: 1px solid red; */
+
+  color: #f7f7ee;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.profileButton {
+  align-self: center;
+  cursor: pointer;
+
+  margin-top: auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+
+  background-color: #272829;
+  color: #17706e;
+
+  font-family: Montserrat;
+  font-size: 16px;
+}

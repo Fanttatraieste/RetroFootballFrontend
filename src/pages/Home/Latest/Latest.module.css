@@ -1,0 +1,301 @@
+* {
+  box-sizing: border-box;
+}
+
+.latest {
+  /* display: flex;
+  padding: 50px 20px;
+  gap: 50px; */
+  background: linear-gradient(
+    90deg,
+    #f5f5f5 0%,
+    rgba(247, 242, 237, 0.8) 15.79%,
+    #f8f0e5 44.79%,
+    #d9d9d9 79.69%,
+    rgba(152, 152, 152, 0.7) 98.96%
+  );
+}
+
+.latestInner {
+  margin: 0 auto;
+  max-width: 1500px;
+  display: flex;
+  padding: 130px 100px;
+  gap: 50px;
+}
+
+.latestTitleSection {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  gap: 10px;
+}
+
+.title {
+  font-size: 32px;
+  font-family: "Life Savers";
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  max-width: 350px;
+  font-family: "Montserrat";
+}
+
+.viewButton {
+  text-decoration: none;
+  margin-top: auto;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #272829;
+  font-family: "Montserrat";
+  color: #272829;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  width: auto;
+  display: inline-flex;
+  gap: 40px;
+  align-items: center;
+  position: relative;
+  width: fit-content;
+  border-radius: 3px;
+  transition: all 500ms;
+}
+
+.viewButton:hover {
+  background-color: #272829;
+  color: #f5f5f5;
+}
+
+.viewIcon {
+  width: 30px;
+  height: 30px;
+  fill: none;
+}
+
+.viewIcon path {
+  stroke: #272829;
+}
+
+.viewButton:hover .viewIcon path {
+  stroke: #f5f5f5;
+}
+
+.latestIcons {
+  /* border: 1px solid red; */
+  margin-left: auto;
+  padding: 0px;
+  background-color: #fff;
+}
+
+.iconList {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  padding: 0px;
+  list-style-type: none;
+  /* border: 1px solid red; */
+  margin: 0px;
+}
+
+.iconCard {
+  display: flex;
+  gap: 0px;
+  padding: 0px;
+  border-bottom: 1px solid #272829;
+  margin: 0px;
+}
+
+.iconCard:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.redPositionText {
+  color: #c51605;
+}
+
+.greenPositionText {
+  color: #a8df8e;
+}
+
+.bluePositionText {
+  color: #279eff;
+}
+
+.yellowPositionText {
+  color: #ffbd64;
+}
+
+.redPosition {
+  border-left: 3px solid #c51605;
+  border-right: 1px solid #c51605;
+}
+
+.greenPosition {
+  border-left: 3px solid #a8df8e;
+  border-right: 1px solid #a8df8e;
+}
+
+.bluePosition {
+  border-left: 3px solid #279eff;
+  border-right: 1px solid #279eff;
+}
+
+.yellowPosition {
+  border-left: 3px solid #ffbd64;
+  border-right: 1px solid #ffbd64;
+}
+
+.redPositionText,
+.bluePositionText,
+.greenPositionText,
+.yellowPositionText {
+  text-transform: uppercase;
+  transform: rotate(270deg);
+  /* border: 1px solid red; */
+  position: absolute;
+}
+
+.redPosition,
+.greenPosition,
+.bluePosition,
+.yellowPosition {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  width: 70px;
+}
+
+.iconButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  margin: 0;
+  padding: 20px;
+}
+
+.iconLink {
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #272829;
+  font-family: "Montserrat";
+  color: #272829;
+  padding: 15px 10px;
+  border-radius: 3px;
+  transition: all 300ms;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.iconLink:hover {
+  background-color: #272829;
+  color: #f5f5f5;
+}
+
+.iconLink:hover .iconArrowRight path {
+  /* background-color: #272829; */
+  fill: #f5f5f5;
+}
+
+.iconArrowRight {
+  fill: none;
+  width: 14px;
+  height: 14px;
+}
+
+.iconArrowRight path {
+  fill: #272829;
+}
+
+.iconInfo {
+  display: flex;
+  gap: 30px;
+  border-right: 1px solid #272829;
+  width: 450px;
+  align-items: center;
+  padding: 10px 18px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.iconName {
+  font-size: 20px;
+  color: #272829;
+  font-family: "Montserrat";
+  /* border: 1px solid red; */
+}
+
+.iconCountriesDiv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.iconCountries {
+  padding: 0px;
+  margin: 0px;
+  color: #272829;
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+.iconStats {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin-left: auto;
+  /* border: 1px solid red; */
+  padding: 0;
+}
+
+.iconCountriesLocationIcon {
+  width: 14px;
+  height: 18px;
+}
+
+.iconCountriesLocationIcon path {
+  fill: #272829;
+}
+
+.iconStat {
+  color: #272829;
+  font-family: "Montserrat";
+  font-size: 12px;
+}
+
+.iconGames {
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  position: relative;
+  top: 3px;
+}
+
+.iconCalendar {
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  position: relative;
+  top: 3px;
+}
+
+.iconTrophy {
+  width: 12px;
+  height: 14px;
+  margin-right: 6px;
+  position: relative;
+  top: 3px;
+}
