@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-// import { setResults } from "../../../utils/iconsSlice";
+// import { setResults } from "../../../utils/resultsSlice";
 
 import PropTypes from "prop-types";
 import styles from "./QueriedIcons.module.css";
@@ -34,7 +34,6 @@ function QueriedIcons() {
       .then((data) => {
         setIcons(data.data.icons);
         setLoading(false);
-
         // dispatch(setResults(data.results));
 
         // console.log("caut");

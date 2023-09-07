@@ -1,3 +1,22 @@
-.pagesContainer {
-  background-color: red;
+.pages {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.pageDiv {
+  font-size: 20px;
+
+  color: #f5f5f5;
+  font-family: Montserrat;
+  font-weight: 400;
+
+  background-color: #272829;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
