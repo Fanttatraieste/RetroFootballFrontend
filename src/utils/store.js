@@ -5,6 +5,8 @@ const rootReducer = combineReducers({
   icons: iconsReducer,
 });
 
+// commit
+
 const store = createStore(rootReducer);
 
 export default store;
