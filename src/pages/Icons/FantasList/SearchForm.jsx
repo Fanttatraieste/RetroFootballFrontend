@@ -6,6 +6,7 @@ import {
   setCountry,
   setPosition,
   setSortBy,
+  setPage,
 } from "../../../utils/iconsSlice";
 
 const trophyOptions = [
@@ -140,6 +141,10 @@ const countryOptions = [
     value: "Liberia",
   },
   {
+    label: "Netherlands",
+    value: "Netherlands",
+  },
+  {
     label: "Wales",
     value: "Wales",
   },
@@ -183,8 +188,16 @@ const sortByOptions = [
     value: "leagueTitles",
   },
   {
-    label: "Champions leagues",
+    label: "Champions leagues / Copa Libertadores",
     value: "championsLeague",
+  },
+  {
+    label: "World cup",
+    value: "worldCup",
+  },
+  {
+    label: "EURO / Copa America",
+    value: "continentalCup",
   },
 ];
 
@@ -222,6 +235,7 @@ function SearchForm() {
     dispatch(setPosition(position));
     dispatch(setCountry(country));
     dispatch(setSortBy(sort));
+    dispatch(setPage(1));
 
     console.log(iconForm);
   }

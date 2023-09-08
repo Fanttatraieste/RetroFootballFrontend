@@ -3,7 +3,8 @@ const initialState = {
   country: "all",
   position: "all",
   sortBy: "fantascore",
-  limit: 6,
+  results: 0,
+  limit: 9,
   page: 1,
 };
 
@@ -21,6 +22,8 @@ export default function iconsReducer(state = initialState, action) {
       return { ...state, limit: action.payload };
     case "icons/setPage":
       return { ...state, page: action.payload };
+    case "icons/setResults":
+      return { ...state, results: action.payload };
 
     default:
       return state;
@@ -49,4 +52,8 @@ export function setLimit(limit) {
 
 export function setPage(page) {
   return { type: "icons/setPage", payload: page };
+}
+
+export function setResults(results) {
+  return { type: "icons/setResults", payload: results };
 }

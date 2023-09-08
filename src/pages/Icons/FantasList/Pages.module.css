@@ -4,7 +4,8 @@
   gap: 20px;
 }
 
-.pageDiv {
+.pageDiv,
+.dots {
   font-size: 20px;
 
   color: #f5f5f5;
@@ -12,6 +13,28 @@
   font-weight: 400;
 
   background-color: #272829;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageDiv {
+  cursor: pointer;
+}
+
+.pageDivActive {
+  font-size: 20px;
+  transition: all 500ms;
+
+  color: black;
+  font-family: Montserrat;
+  font-weight: 400;
+
+  background-color: #17706e;
   border-radius: 50%;
   width: 40px;
   height: 40px;

@@ -12,7 +12,7 @@
 .iconCard {
   /* border: 1px solid red; */
   width: 270px;
-  height: 650px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -107,7 +107,7 @@
   align-self: center;
   cursor: pointer;
 
-  margin-top: auto;
+  /* margin-top: 10px; */
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -122,4 +122,30 @@
 
   font-family: Montserrat;
   font-size: 16px;
+}
+
+.trophyContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+.trophyIcon {
+  width: 20px;
+  height: 20px;
+  fill: none;
+}
+
+.trophyIcon path {
+  fill: black;
+}
+
+.countTrophies {
+  color: black;
+
+  font-family: Montserrat;
+  font-size: 20px;
+  margin: 0px;
 }

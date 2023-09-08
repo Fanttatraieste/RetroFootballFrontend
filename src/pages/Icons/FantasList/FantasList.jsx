@@ -7,6 +7,7 @@ function FantasList() {
   return (
     <div className={styles.iconContainer}>
       <SearchForm />
+      <Pages />
       <QueriedIcons />
       <Pages />
     </div>
