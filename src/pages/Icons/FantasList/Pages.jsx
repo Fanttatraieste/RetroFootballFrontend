@@ -44,6 +44,11 @@ function Pages() {
     // console.log(results);
     setPageList([]);
 
+    if (first === last) {
+      setPageList([`${first}`]);
+      return;
+    }
+
     let pg = [];
     pg.push("<");
     pg.push(`${first}`);
