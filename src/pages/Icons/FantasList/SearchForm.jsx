@@ -153,6 +153,10 @@ const countryOptions = [
     value: "Scotland",
   },
   {
+    label: "Romania",
+    value: "Romania",
+  },
+  {
     label: "Czechoslovakia",
     value: "Czechoslovakia",
   },
