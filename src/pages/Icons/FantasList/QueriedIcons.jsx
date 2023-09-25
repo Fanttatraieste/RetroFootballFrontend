@@ -64,8 +64,14 @@ function IconList({ icons }) {
 }
 
 function Icon({ icon }) {
+  const [ballonDorWinner, setBallonDorWinner] = useState(false);
   const iconForm = useSelector((store) => store.icons);
   const { sortBy } = iconForm;
+
+  useEffect(() => {
+    if (icon.ballonDor.winner.length > 0) setBallonDorWinner(true);
+  }, []);
+
   function getRandom(images) {
     return images[Math.floor(Math.random() * images.length)];
   }
@@ -166,7 +172,12 @@ function Icon({ icon }) {
 
   return (
     <li className={styles.iconCard}>
-      <p className={styles.iconName}>{icon.name}</p>
+      {!ballonDorWinner && <p className={styles.iconName}>{icon.name}</p>}
+      {ballonDorWinner && (
+        <p className={styles.iconName} style={{ color: "#FFDDAF" }}>
+          {icon.name}
+        </p>
+      )}
       <img className={styles.iconImage} src={getRandom(icon.images)} />
       <div className={styles.iconPositionContainer}>
         <p className={styles.iconPosition}>
