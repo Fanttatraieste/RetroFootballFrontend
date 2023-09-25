@@ -89,6 +89,10 @@ const countryOptions = [
     value: "Brazil",
   },
   {
+    label: "Belgium",
+    value: "Belgium",
+  },
+  {
     label: "Croatia",
     value: "Croatia",
   },
@@ -202,6 +206,34 @@ const sortByOptions = [
   {
     label: "EURO / Copa America",
     value: "continentalCup",
+  },
+  {
+    label: "Career goals",
+    value: "careerGoals",
+  },
+  {
+    label: "Career games",
+    value: "careerGames",
+  },
+  {
+    label: "Retired",
+    value: "retired",
+  },
+  {
+    label: "World cup goals",
+    value: "worldCupGoals",
+  },
+  {
+    label: "Years in football",
+    value: "careerLength",
+  },
+  {
+    label: "Goals for Nation",
+    value: "nationalGoals",
+  },
+  {
+    label: "Games for Nation",
+    value: "nationalGames",
   },
 ];
 

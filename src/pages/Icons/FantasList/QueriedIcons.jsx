@@ -100,8 +100,29 @@ function Icon({ icon }) {
       case "worldCup":
         count += icon.nationalTeam.worldCup.length;
         break;
+      case "nationalGoals":
+        count += icon.nationalTeam.goalsScored;
+        break;
+      case "nationalGames":
+        count += icon.nationalTeam.gamesPlayed;
+        break;
       case "continentalCup":
         count += icon.nationalTeam.continentalCup.length;
+        break;
+      case "careerGoals":
+        count += icon.careerGoals;
+        break;
+      case "careerGames":
+        count += icon.careerGames;
+        break;
+      case "retired":
+        count += icon.retired;
+        break;
+      case "worldCupGoals":
+        count += icon.worldCupGoals;
+        break;
+      case "careerLength":
+        count += icon.careerLength;
         break;
       default:
         count = 0;
