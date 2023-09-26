@@ -97,6 +97,10 @@ const countryOptions = [
     value: "Croatia",
   },
   {
+    label: "Cyprus",
+    value: "Cyprus",
+  },
+  {
     label: "Denmark",
     value: "Denmark",
   },
