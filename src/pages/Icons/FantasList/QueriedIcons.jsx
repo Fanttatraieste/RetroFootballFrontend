@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setResults } from "../../../utils/iconsSlice";
+import { setIcon } from "../../../utils/oneIconSlice";
 
 import PropTypes from "prop-types";
 import styles from "./QueriedIcons.module.css";
+import { useNavigate } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 const baseURL = "http://127.0.0.1:3000/api/v1/icons";
 
 function QueriedIcons() {
@@ -65,6 +68,8 @@ function IconList({ icons }) {
 
 function Icon({ icon, position }) {
   const [ballonDorWinner, setBallonDorWinner] = useState(false);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const iconForm = useSelector((store) => store.icons);
   const { sortBy, page, limit } = iconForm;
 
@@ -170,6 +175,12 @@ function Icon({ icon, position }) {
     return position.charAt(0).toUpperCase() + position.slice(1);
   }
 
+  function handlePlayerProfile() {
+    dispatch(setIcon(icon));
+    const niceName = icon.name.split(' ').join('-');
+    navigate(`/icons/${niceName}`);
+  }
+
   return (
     <li className={styles.iconCard}>
       {!ballonDorWinner && (
@@ -209,7 +220,11 @@ function Icon({ icon, position }) {
           <p className={styles.countTrophies}>{countTrophies()}</p>
         </div>
       )}
-      <button className={styles.profileButton}>Player profile</button>
+      <button className={styles.profileButton} onClick={handlePlayerProfile}>
+        {/* <NavLink to={`/${icon.name}`} className={styles.navLink}> */}
+        Player Profile
+        {/* </NavLink> */}
+      </button>
     </li>
   );
 }

@@ -1,0 +1,77 @@
+.presentationContainer {
+    max-width:1500px;
+    margin: 50px auto;
+    padding: 50px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.profile {
+    display:flex;
+    gap:20px;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.profileTitle {
+    color: #272829;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 400;
+    /* border: 1px solid red; */
+    margin:0px;
+}
+
+.profileScore {
+    color: #272829;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    /* border: 1px solid red; */
+    margin:0px;
+}
+
+.iconImage {
+    width:350px;
+    height:350px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.presentationStats {
+    border-radius: 20px;
+    padding:35px;
+    display:flex;
+    gap:100px;
+    height: fit-content;
+}
+
+.smallSVGContainer {
+    display:flex;
+    align-items: center;
+    gap:15px;
+}
+
+.smallSVG {
+    width:20px;
+    height:20px;
+    fill: none;
+}
+
+.smallSVG path {
+    fill: #272829;
+}
+
+.capsText {
+    text-transform: uppercase;
+    max-width: 200px;
+    /* border: 1px solid red; */
+}
+.smallSVG2 {
+    width:20px;
+    height:20px;
+    fill: none;
+}
