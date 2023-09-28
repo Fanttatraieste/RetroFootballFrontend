@@ -7,8 +7,8 @@ function Icon() {
   // const { icon } = useSelector((store) => store.oneIcon);
   return <div>
     <IconPresentation />
-    {/* <IconCountry />
-    <IconBallonDor /> */}
+    <IconCountry />
+    <IconBallonDor />
   </div>;
 }
 
@@ -122,6 +122,254 @@ function IconPresentation() {
       </div>
     </div>
   </div>
+}
+
+function IconCountry() {
+  const [borderStyle, setBorderStyle] = useState({});
+  const { icon } = useSelector((store) => store.oneIcon);
+  const pos = icon.positions[0];
+
+  useEffect(() => {
+    
+
+    switch(pos) {
+      case 'striker':
+        setBorderStyle({border: '1px solid #c51605'})
+        break;
+      case 'forward':
+        setBorderStyle({border: '1px solid #c51605'})
+        break;
+      case 'winger':
+        setBorderStyle({border: '1px solid #c51605'})
+        break;
+      case 'midfielder':
+        setBorderStyle({border: '1px solid #a8df8e'})
+        break;
+      case 'goalkeeper':
+        setBorderStyle({border: '1px solid #ffbd64'})
+        break;
+      case 'defender':
+        setBorderStyle({border: '1px solid #279eff'})
+        break;
+      case 'fullback':
+        setBorderStyle({border: '1px solid #279eff'})
+        break;
+      default:
+        setBorderStyle({border: '1px solid #c51605'})
+    }
+  }, [pos]);
+
+  return <div className={styles.countryContainer}>
+    {/********        Stats container        ********/}
+    <div className={styles.topScorerStats} style={borderStyle}>
+
+      <div className={styles.scorerContainer}>
+        <p className={styles.scorerStat}>Golden Shoe</p>
+        <p className={styles.scorerYear}>{ icon.goldenShoe.join(' / ') || 'N / A' }</p>
+      </div>
+      
+      <div className={styles.scorerContainer}>
+        <p className={styles.scorerStat}>Champions League Top Scorer</p>
+        <p className={styles.scorerYear}>{ icon.championsLeagueTopScorer.join(' / ') || 'N / A' }</p>
+      </div>
+
+      <div className={styles.scorerContainer}>
+        <p className={styles.scorerStat}>Uefa Cup Top Scorer</p>
+        <p className={styles.scorerYear}>{ icon.uefaCupTopScorer.join(' / ') || 'N / A' }</p>
+      </div>
+
+      <div className={styles.scorerContainer}>
+        <p className={styles.scorerStat}>Uefa Cup Winners Cup Top Scorer</p>
+        <p className={styles.scorerYear}>{ icon.uefaCupWinnersCupTopScorer.join(' / ') || 'N / A' }</p>
+      </div>
+
+      <div className={styles.scorerContainer}>
+        <p className={styles.scorerStat}>World Cup Golden Ball</p>
+        <p className={styles.scorerYear}>{ icon.worldCupGoldenBall.join(' / ') || 'N / A' }</p>
+      </div>
+
+      <div className={styles.scorerContainer}>
+        <p className={styles.scorerStat}>World Cup Top Scorer</p>
+        <p className={styles.scorerYear}>{ icon.worldCupTopScorer.join(' / ') || 'N / A' }</p>
+      </div>
+
+      <div className={styles.scorerContainer}>
+        <p className={styles.scorerStat}>Continental Cup Golden Ball</p>
+        <p className={styles.scorerYear}>{ icon.continentalCupGoldenBall.join(' / ') || 'N / A' }</p>
+      </div>
+
+      <div className={styles.scorerContainer}>
+        <p className={styles.scorerStat}>Continental Cup Top Scorer</p>
+        <p className={styles.scorerYear}>{ icon.continentalCupTopScorer.join(' / ') || 'N / A' }</p>
+      </div>
+    </div>
+
+
+    {/********        Country container        ********/}
+    <div className={styles.countryStats} style={borderStyle}>
+      <h3 className={styles.countryTitle}>{icon.country[0]}</h3>
+      <div className={styles.countryStatsInner}>
+        <div className={styles.countrySmallContainer}>
+          <div className={styles.countryStatContainer}>
+            <p className={styles.countryStat}>Games</p>
+            <p className={styles.countryNumber}>{icon.nationalTeam.gamesPlayed}</p>
+          </div>
+
+          <div className={styles.countryStatContainer}>
+            <p className={styles.countryStat}>Goals</p>
+            <p className={styles.countryNumber}>{icon.nationalTeam.goalsScored}</p>
+          </div>
+
+          <div className={styles.countryStatContainer}>
+            <p className={styles.countryStat}>World cup goals</p>
+            <p className={styles.countryNumber}>{icon.worldCupGoals}</p>
+          </div>
+        </div>
+
+
+        <div className={styles.countrySmallContainer}>
+          <div className={styles.countryStatContainer}>
+            <p className={styles.countryStat}>Continental Cup TOT</p>
+            <p className={styles.countryNumber}>{icon.continentalCupTopTOT.join(' / ') || 'N / A'}</p>
+          </div>
+
+          <div className={styles.countryStatContainer}>
+            <p className={styles.countryStat}>World Cup TOT</p>
+            <p className={styles.countryNumber}>{icon.worldCupTopTOT.join(' / ') || 'N / A'}</p>
+          </div>
+        </div>
+
+
+        <div className={styles.countrySmallContainer}>
+          <h3 className={styles.countrySubtitle}>World cup</h3>
+
+          <div className={styles.countryStatContainer}>
+            <p className={styles.countryStat}>Winner</p>
+            <p className={styles.countryNumber}>{icon.nationalTeam.worldCup.join(' / ') || 'N / A'}</p>
+          </div>
+
+          <div className={styles.countryStatContainer}>
+            <p className={styles.countryStat}>Finalist</p>
+            <p className={styles.countryNumber}>{icon.nationalTeam.worldCupRunnerup.join(' / ') || 'N / A'}</p>
+          </div>
+
+          <div className={styles.countryStatContainer}>
+            <p className={styles.countryStat}>Third place</p>
+            <p className={styles.countryNumber}>{icon.nationalTeam.worldCupThirdPlace.join(' / ') || 'N / A'}</p>
+          </div>
+        </div>
+
+        <div className={styles.countrySmallContainer}>
+          <h3 className={styles.countrySubtitle}>Euro / Copa America</h3>
+
+          <div className={styles.countryStatContainer}>
+              <p className={styles.countryStat}>Winner</p>
+              <p className={styles.countryNumber}>{icon.nationalTeam.continentalCup.join(' / ') || 'N / A'}</p>
+          </div>
+
+          <div className={styles.countryStatContainer}>
+              <p className={styles.countryStat}>Finalist</p>
+              <p className={styles.countryNumber}>{icon.nationalTeam.continentalCupRunnerup.join(' / ') || 'N / A'}</p>
+          </div>
+
+          <div className={styles.countryStatContainer}>
+              <p className={styles.countryStat}>Third place</p>
+              <p className={styles.countryNumber}>{icon.nationalTeam.continentalCupThirdPlace.join(' / ') || 'N / A'}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ </div>
+}
+
+function IconBallonDor() {
+  const [borderStyle, setBorderStyle] = useState({});
+  const { icon } = useSelector((store) => store.oneIcon);
+  const pos = icon.positions[0];
+
+  useEffect(() => {
+    switch(pos) {
+      case 'striker':
+        setBorderStyle({border: '1px solid #c51605'})
+        break;
+      case 'forward':
+        setBorderStyle({border: '1px solid #c51605'})
+        break;
+      case 'winger':
+        setBorderStyle({border: '1px solid #c51605'})
+        break;
+      case 'midfielder':
+        setBorderStyle({border: '1px solid #a8df8e'})
+        break;
+      case 'goalkeeper':
+        setBorderStyle({border: '1px solid #ffbd64'})
+        break;
+      case 'defender':
+        setBorderStyle({border: '1px solid #279eff'})
+        break;
+      case 'fullback':
+        setBorderStyle({border: '1px solid #279eff'})
+        break;
+      default:
+        setBorderStyle({border: '1px solid #c51605'})
+    }
+  }, [pos]);
+ return <div className={styles.ballonContainer} style={borderStyle}>
+            <h3 className={styles.ballonTitle}>Ballon d&apos;Or</h3>
+            
+            <div className={styles.ballonInner}>
+            <div className={styles.ballonSmallContainer}>
+                  <div className={styles.ballonPrize}>
+                    <p className={styles.ballonPosition}>Winner</p>
+                    <p className={styles.ballonYears}>{icon.ballonDor.winner.join(' / ') || 'N / A'}</p>
+                  </div>
+                  <div className={styles.ballonPrize}>
+                    <p className={styles.ballonPosition}>Finalist</p>
+                    <p className={styles.ballonYears}>{icon.ballonDor.secondPlace.join(' / ') || 'N / A'}</p>
+                  </div>
+                  <div className={styles.ballonPrize}>
+                    <p className={styles.ballonPosition}>Third place</p>
+                    <p className={styles.ballonYears}>{icon.ballonDor.thirdPlace.join(' / ') || 'N / A'}</p>
+                  </div>
+                  <div className={styles.ballonPrize}>
+                    <p className={styles.ballonPosition}>Fourth place</p>
+                    <p className={styles.ballonYears}>{icon.ballonDor.fourthPlace.join(' / ') || 'N / A'}</p>
+                  </div>
+                  <div className={styles.ballonPrize}>
+                    <p className={styles.ballonPosition}>Fifth place</p>
+                    <p className={styles.ballonYears}>{icon.ballonDor.fifthPlace.join(' / ') || 'N / A'}</p>
+                  </div>
+            </div>
+            <div className={styles.ballonSmallContainer}>
+                <div className={styles.ballonPrize}>
+                  <p className={styles.ballonPosition}>Sixth place</p>
+                  <p className={styles.ballonYears}>{icon.ballonDor.sixthPlace.join(' / ') || 'N / A'}</p>
+                </div>
+                <div className={styles.ballonPrize}>
+                  <p className={styles.ballonPosition}>Seventh place</p>
+                  <p className={styles.ballonYears}>{icon.ballonDor.seventhPlace.join(' / ') || 'N / A'}</p>
+                </div>
+                <div className={styles.ballonPrize}>
+                  <p className={styles.ballonPosition}>Eighth place</p>
+                  <p className={styles.ballonYears}>{icon.ballonDor.eighthPlace.join(' / ') || 'N / A'}</p>
+                </div>
+                <div className={styles.ballonPrize}>
+                  <p className={styles.ballonPosition}>Nineth place</p>
+                  <p className={styles.ballonYears}>{icon.ballonDor.ninethPlace.join(' / ') || 'N / A'}</p>
+                </div>
+                <div className={styles.ballonPrize}>
+                  <p className={styles.ballonPosition}>Tenth place</p>
+                  <p className={styles.ballonYears}>{icon.ballonDor.tenthPlace.join(' / ') || 'N / A'}</p>
+                </div>
+            </div>
+            </div>
+
+            <div className={styles.ballonPrize} style={{maxWidth:'80%', alignSelf:'center'}}>
+              <p className={styles.ballonPosition}>Nominations</p>
+              <p className={styles.ballonYears} style={{maxWidth:'70%'}}>{icon.ballonDor.nominations.join(' / ') || 'N / A'}</p>
+            </div>
+</div>
 }
 
 export default Icon;
