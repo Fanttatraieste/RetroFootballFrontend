@@ -1,0 +1,117 @@
+
+
+.teamContainer {
+    max-width:1000px;
+    margin:50px auto;
+    display:flex;
+    flex-direction: column;
+    gap:35px;
+    padding:30px 40px;
+
+    border-radius: 20px;
+}
+
+.teamTitle{
+    color: #272829;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin: 0px;
+    height:fit-content;
+}
+
+.teamContainerInner {
+    display:flex;
+    justify-content: space-between;
+    gap:50px;
+}
+
+.teamLeft, 
+.teamRight {
+    width:40%;
+}
+
+.teamLeft {
+    display:flex;
+    flex-direction: column;
+    gap:35px;
+}
+
+.teamStats {
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+    justify-content: flex-start;
+}
+
+.stat {
+    display:flex;
+    gap:15px;
+    align-items: center;
+}
+
+.smallSVG {
+    width:20px;
+    height:20px;
+}
+
+.smallSVG path {
+    fill: #272829;
+}
+
+.statText {
+    margin: 0px;
+    padding: 0px;
+    color: #272829;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.teamDomestic, 
+.teamRight {
+    margin: 0px;
+    padding: 0px;
+    display:flex;
+    flex-direction: column;
+    gap:25px;
+}
+
+.trophyContainer {
+    margin: 0px;
+    padding: 0px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.trophyType, 
+.trophyList {
+    max-width:50%;
+}
+
+.trophyType {
+    margin: 0px;
+    padding: 0px;
+    color: #272829;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.trophyList {
+    margin: 0px;
+    padding: 0px;
+    color: #272829;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+    /* text-transform: capitalize; */
+}

@@ -254,3 +254,70 @@
     text-transform: capitalize;
     text-align: center;
 }
+
+/***********       Icon teams containers       ***********/
+.teamsContainer {
+    border: 1px solid #272829;
+    border-radius:20px;
+    margin: 20px auto;
+    max-width: 900px;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+    height:fit-content;
+}
+
+.teamsTitle {
+    color: #272829;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin: 30px;
+}
+
+.teamsContainerInner {
+    display:flex;
+    gap:25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teamLink {
+    text-decoration: none;
+    color: rgba(39, 40, 41, 0.6);
+    font-family: Montserrat;
+  }
+  
+.teamLink:hover {
+    color: #272829;
+  }
+  
+.teamsContainerInner a:global(.active) {
+    color: #272829;
+}
+
+.notes {
+    max-width: 1500px;
+    display:flex;
+    flex-direction: column;
+    gap:25px;
+
+    margin:120px auto 30px auto;
+}
+
+.notesText {
+    color: #272829;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+
+    margin: 0px;
+    padding: 0px;
+}
